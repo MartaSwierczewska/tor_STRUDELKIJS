@@ -50,7 +50,7 @@ class Send extends Component {
       <div className="send">
         <div className="send__title">
           <Title style={{ textAlign: 'center' }} level={3}>
-            Oceń punkt odbioru <Icon type="smile" />
+            Rate collection point <Icon type="smile" />
           </Title>
         </div>
         <Row gutter={16}>
@@ -58,9 +58,7 @@ class Send extends Component {
             <div className="gutter-box">
               <Card
                 hoverable
-                title={
-                  <strong>Szczegóły ocenianego punktu odbioru przesyłek</strong>
-                }
+                title={<strong>Details about chosen point</strong>}
                 bordered
               >
                 <Rating data={this.state.point} />
@@ -71,11 +69,7 @@ class Send extends Component {
             <div className="gutter-box">
               <Card
                 hoverable
-                title={
-                  <strong>
-                    Kliknij aby ocenić wybrany punkt odbioru przesyłki
-                  </strong>
-                }
+                title={<strong>Drag to rate your collection point</strong>}
                 bordered
               >
                 <Star
@@ -97,7 +91,7 @@ class Send extends Component {
                   className="main-page__button"
                   type="primary"
                 >
-                  <strong>Wyślij</strong>
+                  <strong>Send</strong>
                 </Button>
               </div>
             </div>
@@ -106,11 +100,11 @@ class Send extends Component {
 
         <Modal visible={this.state.modalOpen}>
           <Title style={{ textAlign: 'center' }} level={1}>
-            <p>Dziękujemy!</p>
+            <p>Thank you!</p>
           </Title>
           <Title style={{ textAlign: 'center' }} level={2}>
             <p>
-              Twoja ocena to:{' '}
+              Rate you've sent:{' '}
               {this.state.overall && this.state.overall.toFixed(2)}
             </p>
           </Title>
@@ -121,7 +115,7 @@ class Send extends Component {
                 className="main-page__button"
                 type="primary"
               >
-                <strong>Zakończ</strong>
+                <strong>Close</strong>
               </Button>
             </Link>
           </div>
