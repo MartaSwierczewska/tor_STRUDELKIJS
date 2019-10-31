@@ -15,15 +15,14 @@ class Main extends Component {
       <Row type="flex" justify="center" align="middle" className="main-page">
         <Col span={24} style={{ textAlign: 'center' }}>
           <img className="main-page__icon" src={mark} alt="Mark" />
-          <Title>Oceniator punktów odbioru 4000</Title>
+          <Title>Find your best collection point</Title>
           <Title level={3}>
-            Narzędzie służące wyszukiwaniu oraz ocenianiu punktów odbioru
-            przesyłek <Icon type="smile" />
+            Based on your preferences and overall ranking <Icon type="smile" />
           </Title>
 
           <Link to="/select-point">
             <Button className="main-page__button" type="primary">
-              <strong>Zaczynam!</strong>
+              <strong>Let's start!</strong>
             </Button>
           </Link>
         </Col>

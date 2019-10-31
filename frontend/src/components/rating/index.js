@@ -38,7 +38,7 @@ class Index extends Component {
           </strong>
         </h2>
         <p>
-          <strong>Adres:</strong>
+          <strong>Address:</strong>
         </p>
         <p>
           ul. {this.props.data.address.street}
@@ -49,7 +49,7 @@ class Index extends Component {
         {this.props.hours && (
           <div>
             <p>
-              <strong>Godziny otwarcia:</strong>
+              <strong>Opening hours:</strong>
             </p>
             {this.props.data.openHoures.map((day, i) => {
               return (

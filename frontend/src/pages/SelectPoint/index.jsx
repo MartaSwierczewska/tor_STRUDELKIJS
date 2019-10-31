@@ -135,9 +135,7 @@ class Main extends Component {
                         <div className="gutter-box">
                           <Card
                             hoverable
-                            title={
-                              <strong>Ocena punktu odbioru przesyłek</strong>
-                            }
+                            title={<strong>Opinion of chosen point</strong>}
                             bordered
                           >
                             <Star
@@ -163,11 +161,7 @@ class Main extends Component {
                         <div className="gutter-box">
                           <Card
                             hoverable
-                            title={
-                              <strong>
-                                Szczegóły punktu odbioru przesyłek
-                              </strong>
-                            }
+                            title={<strong>Details about chosen point</strong>}
                             bordered
                           >
                             <Rating
@@ -187,7 +181,7 @@ class Main extends Component {
                             className="main-page__button"
                             type="primary"
                           >
-                            <strong>Wybieram punkt</strong>
+                            <strong>I choose this point</strong>
                           </Button>
                         </div>
                       </Col>
@@ -196,7 +190,8 @@ class Main extends Component {
                 ) : (
                   <div className="select-point__info-container--empty">
                     <Title style={{ textAlign: 'center' }} level={3}>
-                      Wybierz swój punkt odbioru paczki <Icon type="smile" />
+                      Choose a place to collect your delivery{' '}
+                      <Icon type="smile" />
                     </Title>
                   </div>
                 )}
@@ -214,12 +209,13 @@ class Main extends Component {
                   <Icon type="gift" theme="filled" />
                 </Title>
                 <Title level={4} style={{ marginBottom: '30px' }}>
-                  Nasz system znalazł świetny punkt odbioru bliżej Ciebie!
+                  Our system found an amazing collection point closer to your
+                  location!
                 </Title>
                 <Row gutter={25} type="flex" align="top">
                   <Col className="gutter-row" xs={24} md={24} lg={24} xl={12}>
                     <div className="gutter-box">
-                      <p>Aktualnie wybrany punkt:</p>
+                      <p>Current place:</p>
                       <Rating
                         key={`modal${this.state.selectedPoint.id}`}
                         data={this.state.selectedPoint}
@@ -237,8 +233,7 @@ class Main extends Component {
                       <div className="gutter-box">
                         <p>
                           <strong>
-                            <Icon type="check-square" /> Punkt odbioru położony
-                            bliżej:
+                            <Icon type="check-square" /> Our suggestion:
                           </strong>
                         </p>
                         <Rating
@@ -264,7 +259,7 @@ class Main extends Component {
                       }
                     }}
                   >
-                    <Button className="button-modal-first">Innym razem</Button>
+                    <Button className="button-modal-first">Other time</Button>
                   </Link>
                   <Link
                     to={{
@@ -275,7 +270,7 @@ class Main extends Component {
                     }}
                   >
                     <Button className="ant-btn-primary button-modal-second">
-                      Zgadzam się
+                      I agree
                     </Button>
                   </Link>
                 </div>
@@ -284,7 +279,7 @@ class Main extends Component {
           </Row>
         ) : (
           <div className="select-point__spinner-container">
-            <Spin size="large" tip="Ładowanie..." />
+            <Spin size="large" tip="Loading..." />
           </div>
         )}
       </div>

@@ -90,12 +90,12 @@ class Star extends Component {
     return (
       <div className={this.props.className}>
         <Title level={3} style={{ marginBottom: '30px' }}>
-          Ogólna ocena: {parcelOverallMarkup}
+          Overall raking: {parcelOverallMarkup}
         </Title>
         <canvas ref={this.myRef} />
         {this.state.isMobile ? (
           <div className="legend">
-            Legenda:
+            Legend:
             <p>
               <span className="dot green" /> - {SERVICE}
             </p>
