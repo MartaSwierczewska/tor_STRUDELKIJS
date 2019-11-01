@@ -6,11 +6,15 @@ In order to use Google Maps go to https://developers.google.com/maps/documentati
 
 Open **/frontend/.env** file and paste: *REACT_APP_MAPS_API_KEY=yourApiKey* putting there generated value.
 
+Prerequisites
+* node
+
 `npm install`  Installs node_modules
 
 `npm start`  Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
 
-Run frontend and backend with npm or yarn. 
+Run frontend and backend with npm or yarn.
+
 
 1) Welcome page, let's start finding the best point for you!
 ![Image1](imgToReadme/screenshot1.png)
