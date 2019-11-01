@@ -1,8 +1,10 @@
+### Find the best place to pick up your delivery
+
 Web application, which allows users to rate collection point and find the best one(based on their preferences, location and other users ratings) using Google Maps API
 
-In order to use Google Maps go to https://developers.google.com/maps/documentation/embed/get-api-key and get an **API key**. You can use version for developers without billing. 
+In order to use Google Maps go to https://developers.google.com/maps/documentation/embed/get-api-key and get an <br> **API key**. You can use version for developers without billing. 
 
-Open **/frontend/.env** file and paste: REACT_APP_MAPS_API_KEY=yourApiKey putting there generated value.
+Open **/frontend/.env** file and paste: *REACT_APP_MAPS_API_KEY=yourApiKey* putting there generated value.
 
 `npm install`  Installs node_modules
 
@@ -10,18 +12,18 @@ Open **/frontend/.env** file and paste: REACT_APP_MAPS_API_KEY=yourApiKey puttin
 
 Run frontend and backend with npm or yarn. 
 
-1) Welcome page, let's start finding best point for you!
+1) Welcome page, let's start finding the best point for you!
 ![Image1](imgToReadme/screenshot1.png)
 
-2) There's plenty of collection point in Warsaw, choose which interests you.
+2) There's plenty of collection points in Warsaw, choose which interests you the most.
 ![Image2](imgToReadme/screenshot2.png)
 
 3) On the right side, you can see overall ranking of this point as well as details of retrieval.
 ![Image3](imgToReadme/screenshot3.png)
 
-4) If there is more suitable point, we will tell you about it! We search for better location or opinion. You can accept it or stay with your first choice.
+4) If there is more suitable point, we will tell you about it! We search for better location and opinion. You can either accept it or stay with your first choice.
 ![Image4](imgToReadme/screenshot4.png)
 
-5) At the end we would like to share your experience with particular point by setting 3 factors on a triangle.
+5) At the end we would like to share your experience about particular point by setting 3 factors on a triangle.
 ![Image5](imgToReadme/screenshot5.png)
 
